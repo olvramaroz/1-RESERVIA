@@ -1,3 +1,38 @@
-h1 {
-    color: red;
+nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonStyle{
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+  	border: 0;
+    border-top-right-radius: 15px 15px;
+  	border-bottom-right-radius: 15px 15px;
+    background-color: #0065FC;
+}
+
+.fa-map-marker-alt{
+    color: black;
+}
+
+#filtres ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hebergement{
+    background-color: #f2f2f2;
+
+}
+
+#populaire{
+    background-color: #f2f2f2;
+
 }
