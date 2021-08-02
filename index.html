@@ -5,92 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia : trouvez les meilleures offres pour vos séjours</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/0b1f72f67c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
+                <!--LOGO ET MENU-->  
       <header>
-        <!--LOGO ET MENU-->  
         <img
           id="logo"
           src="images/logo/Reservia-logo.png"
           alt="logo du site de réservation Reservia"
         />
         <nav>
-          <ul>
+          <ul class="navLiens">
             <li><a href="#hebergement">Hébergements</a></li>
             <li><a href="#activites">Activités</a></li>
-            <li><a href="#inscription">S'inscrire</a></li>
+            <li><a href="#inscription"><span class="colorBleuFonce"><b>S'inscrire</b></span></a></li>
           </ul>
         </nav>
+        </header>
 
         <!-- RECHERCHE -->
         <section>
-            <h2 class="sectionTitre">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <h2 class="rechercheTitre">Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
 
-            <article id="rechercheBox">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" value="Marseille, France">
-                <button class="buttonStyle" type="button">Recherche moi</button>
-            </article>
-            <article id="filtres">
-                <ul>
-                    <li>Economique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
-                </ul>
-            </article>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="rechercheBox">
+                <div class="iconRecherche"><i class="fas fa-map-marker-alt fa-lg"></i></div>
+                <div class="inputRecherche"><input type="search" placeholder="Marseille, France"></div>
+                <div class=""><button class="buttonRecherche" type="button">Recherche</button></div>
+            </div>
         </section>
-    </header>
+
+            <!-- FILTRES  -->
+        <section class="sectionFiltres">
+                <P>Filtres</P>
+                    <div class="filtres">
+                        <div class="iconFiltres"><i class="fas fa-money-bill-wave-alt fa-lg"></i></div>
+                        <p>Economique</p>
+                    </div>
+                    <div class="filtres">
+                        <div class="iconFiltres"><i class="fas fa-child fa-lg iconFiltres"></i></div>
+                        <p>Familial</p>
+                    </div>
+                    <div class="filtres">
+                        <div class="iconFiltres"><i class="fas fa-heart fa-lg iconFiltres"></i></div>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="filtres">
+                        <div class="iconFiltres"><i class="fas fa-dog fa-lg iconFiltres"></i></div>
+                        <p>Animaux autorisés</p>
+                    </div>
+                </ul>
+        </section>
+        
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
 
         <!-- HEBERGEMENT -->
-        <section id="hebergement">
-            <h2>Hébergement à Marseille</h2>
-            <div class="listeHebergement">
-                <article class="imageHebergement">
-                    <img src="images/hebergements/desktop/Reservia_Cannebiere_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
-                    <b>Auberge la Canneberge</b>
-                    <p>Nuit à partir de <b>25€</b></p>
+        <section id="hebergement" class="backgroundGris">
+            <h2 class="contentTitle">Hébergements à Marseille</h2>
+            <div class="content">
+                <div class="backgroundBlanc">
+                    <div class="imageHebergement"><img src="images/hebergements/desktop/Reservia_Cannebiere_D.jpg" alt="Auberge la Canneberge sur Reservia"/></div>
+                    <div><p><b>Auberge la Canneberge</b><br>Nuit à partir de <b>25€</b></p></div>
+                    <div><!-- etoile rating --></div>
+                </div>
+                    
+                <div class="backgroundBlanc">
+                    <div class="imageHebergement"><img src="images/hebergements/desktop/Reservia_Hotel_Port_D.jpg" alt="Auberge la Canneberge sur Reservia"/></div>
+                    <div><p><b>Hôtel du Port</b><br>Nuit à partir de 52<b>€</b></p></div>
+                    <div><!-- etoile rating --></div>
+                </div>
+
+
+                     <article class="imageHebergement">
+                        <img src="images/hebergements/desktop/Reservia_Mouette_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
+                        <b>Hôtel Les mouettes</b>
+                        <p>Nuit à partir de 76<b>€</b></p>
                     <!-- etoile rating -->
-                </article>
-                <article class="imageHebergement">
-                    <img src="images/hebergements/desktop/Reservia_Hotel_Port_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
-                    <b>Hôtel du Port</b>
-                    <p>Nuit à partir de 52<b>€</b></p>
+                    </article>
+                    <article class="imageHebergement">
+                        <img src="images/hebergements/desktop/Reservia_Hotel_Mer_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
+                        <b>Hôtel de la mer</b>
+                        <p>Nuit à partir de 46<b>€</b></p>
                     <!-- etoile rating -->
-                </article>
-                <article class="imageHebergement">
-                    <img src="images/hebergements/desktop/Reservia_Mouette_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
-                    <b>Hôtel Les mouettes</b>
-                    <p>Nuit à partir de 76<b>€</b></p>
+                    </article>
+                    <article class="imageHebergement">
+                        <img src="images/hebergements/desktop/reservia_Panier_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
+                        <b>Auberge Le panier</b>
+                        <p>Nuit à partir de <b>23€</b></p>
                     <!-- etoile rating -->
-                </article>
-                <article class="imageHebergement">
-                    <img src="images/hebergements/desktop/Reservia_Hotel_Mer_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
-                    <b>Hôtel de la mer</b>
-                    <p>Nuit à partir de 46<b>€</b></p>
+                    </article>
+                    <article class="imageHebergement">
+                        <img src="images/hebergements/desktop/Reservia_Amina_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
+                        <b>Hôtel chez Amina</b>
+                        <p>Nuit à partir de 96<b>€</b></p>
                     <!-- etoile rating -->
-                </article>
-                <article class="imageHebergement">
-                    <img src="images/hebergements/desktop/reservia_Panier_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
-                    <b>Auberge Le panier</b>
-                    <p>Nuit à partir de <b>23€</b></p>
-                    <!-- etoile rating -->
-                </article>
-                <article class="imageHebergement">
-                    <img src="images/hebergements/desktop/Reservia_Amina_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
-                    <b>Hôtel chez Amina</b>
-                    <p>Nuit à partir de 96<b>€</b></p>
-                    <!-- etoile rating -->
-                </article>
+                    </article>
+                
+                <p>Afficher plus</p>
             </div>
-            <p>Afficher plus</p>
         </section>
 
         <!-- POPULAIRE -->
-        <section id="populaire">
+        <section id="populaire" class="backgroundGris">
             <h2>Les plus populaires</h2>
             <article class="imagePopulaire">
                 <img src="images/hebergements/desktop/Reservia_Soleil_Matin_D.jpg" alt="Auberge la Canneberge sur Reservia"/>
@@ -113,7 +132,7 @@
         </section>
 
         <!-- ACTIVITES -->
-        <section>
+        <section id="activites" class="backgroundGris">
             <h2>Activités à Marseille</h2>
         </section>
 

@@ -1,10 +1,89 @@
-nav{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+/* GLOBAL PARAMETRES  */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0 10px 0 10px;
+    line-height: 1.5;
 }
 
-.buttonStyle{
+.colorBleuFonce{
+    color: #0065FC;
+}
+
+.colorBleuClair{
+    color: #DEEBFF;
+}
+
+.backgroundGris{
+    background-color: #F2F2F2;
+}
+
+/* HEADER LOGO ET NAVIGATION */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 150px;
+}
+
+.navLiens{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navLiens li, a{
+    display: inline-block;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.navLiens li:hover{
+    text-decoration: #DEEBFF;
+    border-top: #0065FC solid 2px;
+}
+
+/* PARTIE RECHERCHE */
+
+.rechercheBox{
+    display: flex;
+    margin-top: 25px;
+}
+
+.iconRecherche{
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-top-left-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+}
+
+.inputRecherche{
+    width: 140px;
+    height: 50px;
+    margin-left: 0;
+}
+
+.rechercheBox input{
+    height: 40px;
+    margin-left: 0;
+    border: 0.5px solid #f2f2f2;
+    padding-left: 10px;
+}
+
+.buttonRecherche{
     line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;
@@ -14,23 +93,74 @@ nav{
     border-top-right-radius: 15px 15px;
   	border-bottom-right-radius: 15px 15px;
     background-color: #0065FC;
+    cursor: pointer;
 }
+
+/* FONTAWESOME */
 
 .fa-map-marker-alt{
     color: black;
 }
+.fa-money-bill-wave-alt{
+    color: #0065FC;
+}
+.fa-child{
+    color: #0065FC;
+}
+.fa-heart{
+    color: #0065FC;
+}
+.fa-dog{
+    color: #0065FC;
+}
 
-#filtres ul{
-    list-style: none;
+/* PARTIE FILTRES  */
+.sectionFiltres{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 25px;
 }
 
+.filtres{
+    display: flex;
+}
+
+.iconFiltres{
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius:20px;
+}
+
+/* HEBERGEMENT  */
 #hebergement{
-    background-color: #f2f2f2;
-
+    margin-top: 60px;
 }
+
+.backgroundGris{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.contentTitle{
+    padding: 40px 0 15px 30px;
+}
+
+.content{
+    padding: 20px;
+    display: flex;
+    width: 180px;
+}
+
+.backgroundBlanc{
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* POPULAIRE  */
 
 #populaire{
     background-color: #f2f2f2;
