@@ -2,10 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0 10px 0 10px;
-    line-height: 1.5;
+.marginSides{
+    margin: 0 50px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .colorBleuFonce{
@@ -18,6 +20,11 @@
 
 .backgroundGris{
     background-color: #F2F2F2;
+}
+
+.backgroundBlanc{
+    background-color: white;
+    border-radius: 15px;
 }
 
 /* HEADER LOGO ET NAVIGATION */
@@ -47,8 +54,11 @@ header{
 }
 
 .navLiens li:hover{
-    text-decoration: #DEEBFF;
     border-top: #0065FC solid 2px;
+}
+
+.navLiens li, a:active{
+    color: #0065FC;
 }
 
 /* PARTIE RECHERCHE */
@@ -117,52 +127,193 @@ header{
 /* PARTIE FILTRES  */
 .sectionFiltres{
     display: flex;
-    margin: 25px;
+    margin-top: 20px;
+}
+
+h3{
+    line-height: 3;
+    font-size: 15px;
+    width: 60px;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
 .filtres{
     display: flex;
+    padding: 0 15px;
 }
 
-.iconFiltres{
-    background-color: #DEEBFF;
-    width: 40px;
-    height: 40px;
+.contentFilters{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0;
-    border-radius:20px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.contentFilters i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    background-color: #DEEBFF;
+    padding: 15px 15px;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+
+.contentFilters p{
+    padding-left: 5px;
 }
 
 /* HEBERGEMENT  */
-#hebergement{
-    margin-top: 60px;
-}
 
 .backgroundGris{
     background-color: #f2f2f2;
     border-radius: 20px;
 }
 
-.contentTitle{
-    padding: 40px 0 15px 30px;
-}
 
-.content{
-    padding: 20px;
+.mainHebergementPopulaire{
     display: flex;
-    width: 180px;
+    flex-direction: row;
+    margin-top: 30px;
 }
 
-.backgroundBlanc{
-    background-color: white;
-    border-radius: 15px;
+#hebergement{
+    margin-top: 20px;
+    width: 70%;
+    margin-right: 20px;
+}
+
+.contentTitle{
+    padding: 10px 0 0 35px;
+}
+
+.maincontentHebergement{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.contentHebergement{
+    margin: 10px 10px;
+    height: 240px;
+}
+
+.imageHebergement{
+    padding: 5px;
+    margin: 0;
+}
+
+.textHebergement{
+    padding: 0 5px;
+    line-height: 1.5;
+}
+
+.textHebergement p{
+    margin: 0 5px;
+}
+
+#hebergement > p{
+    padding-left: 30px;
 }
 
 /* POPULAIRE  */
 
 #populaire{
-    background-color: #f2f2f2;
+    width: 30%;
+    margin-top: 20px;
+}
 
+.maincontentPopulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentPopulaire{
+    margin: 10px 10px;
+    display: flex;
+}
+
+.imagePopulaire{
+    padding: 5px;
+}
+
+.textPopulaire{
+    padding: 10px 5px;
+    line-height: 1.5;
+}
+
+/* ACTIVITES  */
+
+#activites{
+    padding-top: 30px;
+}
+
+.mainContentActivites{
+    display: flex;
+    justify-content: space-between;
+}
+
+.oneContent{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px lightgrey;
+    height: 380px;
+}
+
+.oneContent > p{
+    padding-left: 20px;
+}
+
+.twoContent{
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: space-between;
+}
+
+.twoContent > div > p{
+    padding-left: 20px;
+}
+
+.contentSmall{
+    box-shadow: 0px 0px 20px lightgrey;
+}
+
+/* FOOTER  */
+
+footer{
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    padding: 20px 20px;
+}
+
+.apropos{
+    margin-right: 125px;
+}
+
+.noshebergements{
+    margin-right: 180px;
+}
+
+footer h3{
+    padding-left: 40px;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer > div > ul{
+    line-height: 1.5;
 }
