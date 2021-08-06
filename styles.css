@@ -6,6 +6,10 @@
     margin: 0 50px;
 }
 
+li{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -57,7 +61,7 @@ header{
     border-top: #0065FC solid 2px;
 }
 
-.navLiens li, a:active{
+.navLiens li a:active{
     color: #0065FC;
 }
 
@@ -68,7 +72,7 @@ header{
     margin-top: 25px;
 }
 
-.iconRecherche{
+#iconRecherche{
     background-color: #F2F2F2;
     width: 50px;
     height: 40px;
@@ -80,13 +84,7 @@ header{
     border-bottom-left-radius: 15px 15px;
 }
 
-.inputRecherche{
-    width: 140px;
-    height: 50px;
-    margin-left: 0;
-}
-
-.rechercheBox input{
+form > input{
     height: 40px;
     margin-left: 0;
     border: 0.5px solid #f2f2f2;
@@ -172,6 +170,32 @@ h3{
     padding-left: 5px;
 }
 
+.contentFilters:hover{
+    background-color: #d2dbdf;
+    box-shadow:
+    2px 5px 10px 0px #0001,
+    2px 4px 8px 0px #0001
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    padding: 1px 4px;
+    border-radius: 50%;
+    border: 0.1px solid #ccc;
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+}
+
 /* HEBERGEMENT  */
 
 .backgroundGris{
@@ -179,11 +203,9 @@ h3{
     border-radius: 20px;
 }
 
-
 .mainHebergementPopulaire{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
 }
 
 #hebergement{
@@ -207,18 +229,19 @@ h3{
     height: 240px;
 }
 
+.contentHebergement > a{
+    padding: 0;
+}
+
 .imageHebergement{
     padding: 5px;
     margin: 0;
 }
 
 .textHebergement{
-    padding: 0 5px;
-    line-height: 1.5;
-}
-
-.textHebergement p{
-    margin: 0 5px;
+    padding: 5px 15px;
+    margin: 0;
+    line-height: 1.4;
 }
 
 #hebergement > p{
@@ -242,17 +265,45 @@ h3{
     display: flex;
 }
 
+.contentPopulaire > a{
+padding: 0;
+}
+
 .imagePopulaire{
     padding: 5px;
 }
 
+.imagePopulaire > a{
+    padding: 0;
+}
+
 .textPopulaire{
-    padding: 10px 5px;
+    padding: 10px 0 0px 5px;
     line-height: 1.5;
 }
 
-/* ACTIVITES  */
+/* LES ETOILES  */
+.contentHebergement > ul{
+    display: flex;
+    margin: 0;
+    padding: 0 15px;
+}
 
+.contentPopulaire > div > ul{
+    display: flex;
+    margin: 5px 0;
+    padding: 7px 0 0 5px;
+}
+
+.rating[data-active="true"]{
+    color: #0065FC;
+} 
+
+.rating[data-active="false"]{
+    color: #e6e0e0;
+}
+
+/* ACTIVITES  */
 #activites{
     padding-top: 30px;
 }
@@ -286,6 +337,10 @@ h3{
 
 .contentSmall{
     box-shadow: 0px 0px 20px lightgrey;
+}
+
+.imageActivite > a{
+    padding: 0;
 }
 
 /* FOOTER  */
