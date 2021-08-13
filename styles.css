@@ -354,7 +354,6 @@ p.textOutHebergement{
 
 .mainContentActivites{
     display: flex;
-    max-height: 30vw;
 }
 
 .deuxiemeBlocActivite,
@@ -389,6 +388,11 @@ transform: scale(1.05);
 transition: 0.3s;
 }
 
+.contentSmall1,
+.contentSmall4{
+    height: 40%;
+}
+
 .blocFigureLarge{
     margin: 0;
     height: 90%;
@@ -396,7 +400,7 @@ transition: 0.3s;
 
 .blocFigureSmall{
     margin: 0;
-    height: 90%;
+    height: 80%;
 }
 
 .imageActivite{
@@ -408,7 +412,10 @@ transition: 0.3s;
 }
 
 .textActivites{
-    padding-left: 4%;
+    padding: 1.8% 4%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: black;
 }
 
 .contentSmall1,
@@ -417,13 +424,11 @@ transition: 0.3s;
 .contentSmall4{
     box-shadow: 0px 0px 20px lightgrey;
     display: flex;
-    height: 40%;
     justify-content: space-between;
     flex-direction: column;
-}
-
-.imageActivite > a{
-    padding: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px 20px;
 }
 
 /* FOOTER  */
