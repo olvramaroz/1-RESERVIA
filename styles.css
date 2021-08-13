@@ -130,7 +130,6 @@ form > input{
     padding: 0 15px;
     align-items: center;
     height: 40px;
-    font-size: 15px;
     font-weight: bold;
     border-radius: 25px;
     border: 1px solid #ccc;
@@ -139,7 +138,7 @@ form > input{
 }
 
 .filtres p{
-    padding-left: 8px;
+    padding: 5px;
 }
 
 .iconFiltres{
@@ -164,8 +163,6 @@ form > input{
 
 h3{
     line-height: 3;
-    font-size: 15px;
-    font-family: 'Raleway';
     font-weight: bold;
     margin-right: 15px;
 }
@@ -328,6 +325,7 @@ p.textOutHebergement{
 }
 
 /* LES ETOILES  */
+
 .contentHebergement > ul{
     display: flex;
     margin: 0;
@@ -349,6 +347,7 @@ p.textOutHebergement{
 }
 
 /* ACTIVITES  */
+
 #activites{
     padding-top: 30px;
 }
@@ -474,4 +473,122 @@ footer li{
 
 footer > div > ul{
     line-height: 1.5;
+}
+
+/* -----------------VERSION ADAPTEE TABLETTE ---------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #logo{
+        width: 100px;
+    }
+    h2, h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .captionHebergement p{
+        font-size: 14px;
+    }
+    .captionPopulaire > p{
+        font-size: 14px;
+    }
+
+    .filtres{
+        padding: 0 6px;
+        margin: 15px 10px;
+        height: 30px;
+    }
+    .filtres p{
+        padding: 3px;
+        font-size: 13px;
+    }
+
+    .sectionFiltres h3{
+        line-height: 2;
+    }
+    .iconFiltres{
+        width: 30px;
+        height: 30px;
+    }
+
+    .navLiens li a{
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    
+    .marginSides{
+        margin: 0;
+    }
+    
+    .mainHebergementPopulaire{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #hebergement,
+    #populaire{
+        width: 100%;
+    }
+
+    .fa-2x,
+    .fa-lg{
+        font-size: 1em !important;
+    }
+    
+    .maincontentPopulaire{
+        flex-direction: row;
+    }
+    
+    .populaireTitle {
+        padding: 10px 0 0 3%;
+    }
+    
+    .contentPopulaire{
+        margin: 10px 10px;
+    }
+    
+    .contentPopulaire figure{
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .imagePopulaire {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
+    
+    .captionPopulaire {
+        display: block
+    }
+    #activites h2{
+        padding-left: 3%;
+    }
+    .textActivites {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    footer {
+        padding: 0;
+        justify-content: start;
+    }
+    
+    .apropos,
+    .noshebergements{
+        margin-right: 0;
+    }    
+}
+
+
+/* VERSION ADAPTEE MOBILE PORTRAIT */
+@media screen and (max-width: 767px){
+#logo{
+    width: 100px;
+}
+
 }
