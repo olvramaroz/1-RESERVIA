@@ -29,6 +29,10 @@ h2, h3, p{
 }
 
 /* HEADER LOGO ET NAVIGATION */
+#headerMob{
+    display: none;
+}
+
 #headerTab{
     display: flex;
     justify-content: space-between;
@@ -122,6 +126,10 @@ form > input{
 /* PARTIE FILTRES  */
 
 .sectionFiltres{
+    display: flex;
+}
+
+.sectionFiltres > div{
     display: flex;
 }
 
@@ -480,8 +488,8 @@ footer > div > ul{
 
 /* -----------------VERSION ADAPTEE TABLETTE ---------------------*/
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .headerMob{
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    #headerMob{
         display: none;
     }
     #logo{
@@ -592,7 +600,7 @@ footer > div > ul{
 
 
 /* ------------------- VERSION ADAPTEE MOBILE PORTRAIT -----------------*/
-@media screen and (max-width: 767px){
+@media only screen and (max-width: 767px){
     #headerTab{
         display: none;
     }
@@ -604,6 +612,9 @@ footer > div > ul{
     }
     #logo{
         width: 100px;
+    }
+    #inscription{
+        color: #0065FC;
     }
     .navMobile > ul{
         display: flex;
@@ -619,11 +630,19 @@ footer > div > ul{
         font-family: 'Raleway', sans-serif;
     }
     .navMobile > ul > li:hover{
-        color: #0065FC;
         border-bottom: #0065FC solid 2px;
+    }
+    .navMobile > ul > li a:hover{
+        color: #0065FC;
     }
     .marginSides{
         margin: 0;
+    }
+    .rechercheTitle{
+        font-size: 20px;
+    }
+    .recherche  p{
+        font-size: 14px;
     }
     .sectionFiltres{
         display: flex;
@@ -642,6 +661,11 @@ footer > div > ul{
         padding: 0 10px 0 0;
         width: fit-content;
         margin: 5px 15px;
+    }
+    .filtres p,
+    .info p{
+        font-size: 14px;
+    }
     }
     .mainHebergementPopulaire{
         display: flex;
@@ -669,7 +693,7 @@ footer > div > ul{
         font-size: 20px;
     }
     .contentPopulaire{
-        margin: 5px 20px;
+        margin: 5px;
     }
     .maincontentHebergement{
         /* flex-direction: column; */
@@ -677,10 +701,13 @@ footer > div > ul{
     .contentHebergement{
         width: 100%;
     }
+    h2.textOutHebergement{
+        padding: 0;
+    }
     #activites{
         padding-top: 0;
     }
-    .maincontentActivites{
+    div.maincontentActivites{
         display: block !important;
     }
     .premierBlocActivite, .deuxiemeBlocActivite, .troisiemeBlocActivite{
@@ -689,5 +716,23 @@ footer > div > ul{
     .premierBlocActivite.contentSmall1, .contentSmall2, .contentSmall3, .contentSmall4{
         margin-bottom: 35px;
     }
-
+    footer{
+        display: block;
+        padding: 20px 0 50px 0;
+    }
+    .apropos,
+    .noshebergements{
+        margin-right: 0;
+    }
+    .apropos h3,
+    .noshebergements h3,
+    .assistance h3{
+        margin-bottom: 0;
+    }
+    footer h3,
+    footer > div > ul{
+	    padding-left: 10px;
+        margin: 0;
+    }
+    
 }
