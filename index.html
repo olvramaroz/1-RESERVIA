@@ -9,8 +9,9 @@
   </head>
   <body>
     <main>
-                <!--LOGO ET MENU-->  
-      <header class="marginSides">
+                <!--LOGO ET MENU-->
+                <!-- VERSION PC ET TABLETTE    -->
+    <header id="headerTab" class="marginSides">
         <img
           id="logo"
           src="images/logo/Reservia-logo.png"
@@ -23,7 +24,22 @@
             <li><a href="#inscription"><span class="colorBleuFonce"><b>S'inscrire</b></span></a></li>
           </ul>
         </nav>
-        </header>
+    </header>
+
+                <!-- VERSION MOBILE UNIQUEMENT  -->
+
+    <header id="headerMob">
+        <div class="headerMobile">
+            <img id="logo" src="images/logo/Reservia-logo.png" alt="logo du site de réservation Reservia"/>
+            <a href="#inscription"><b>S'inscrire</b></a>
+        </div>
+        <div class="navMobile">
+            <ul>
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>   
+            </ul>
+        </div>
+    </header>
 
         <!-- RECHERCHE -->
         <article class="marginSides">
@@ -39,7 +55,8 @@
 
             <!-- FILTRES  -->
         <article class="sectionFiltres marginSides">
-                <h3>Filtres</h3>
+            <h3>Filtres</h3>
+            <div>
                 <div class="filtres">
                     <div class="iconFiltres"><i class="fas fa-money-bill-wave-alt fa-lg"></i></div>
                     <p>Economique</p>
@@ -56,6 +73,7 @@
                     <div class="iconFiltres"><i class="fas fa-dog fa-lg"></i></div>
                     <p>Animaux autorisés</p>
                 </div>
+            </div>
         </article>
         <div class="info marginSides">
             <i class="fas fa-info fa-xs"></i>
