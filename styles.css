@@ -30,7 +30,7 @@ h2, h3, p{
 
 /* HEADER LOGO ET NAVIGATION */
 #headerMob{
-    display: none;
+    display: contents;
 }
 
 #headerTab{
@@ -486,6 +486,7 @@ footer > div > ul{
     line-height: 1.5;
 }
 
+
 /* -----------------VERSION ADAPTEE TABLETTE ---------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -604,6 +605,7 @@ footer > div > ul{
     #headerTab{
         display: none;
     }
+
     .headerMobile{
         display: flex;
         justify-content: space-between;
@@ -665,7 +667,6 @@ footer > div > ul{
     .filtres p,
     .info p{
         font-size: 14px;
-    }
     }
     .mainHebergementPopulaire{
         display: flex;
@@ -735,4 +736,12 @@ footer > div > ul{
         margin: 0;
     }
     
+}
+
+/* ADAPTATION VERSION PC  */
+
+@media only screen and (min-width: 1023px){
+    #headerMob{
+        display: none;
+    }
 }
