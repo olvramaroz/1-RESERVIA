@@ -1,6 +1,6 @@
 /* GLOBAL PARAMETRES  */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
 
 .marginSides{
     margin: 0 50px;
@@ -28,9 +28,13 @@ h2, h3, p{
     border-radius: 20px;
 }
 
+.colorBleuFonce{
+    color: #0065FC;
+}
+
 /* HEADER LOGO ET NAVIGATION */
 #headerMob{
-    display: contents;
+    display: none;
 }
 
 #headerTab{
@@ -41,6 +45,7 @@ h2, h3, p{
 
 #logo{
     width: 150px;
+    padding-top: 30px;
 }
 
 .navLiens{
@@ -49,21 +54,23 @@ h2, h3, p{
     justify-content: flex-end;
 }
 
+.navLiens li{
+    padding: 50px 10px 0;
+    border-top: 1px solid white;
+}
+
 .navLiens li a{
-    display: inline-block;
-    padding: 15px 15px;
+    padding: 15px 35px;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     color: black;
 }
 
-.navLiens li:hover{
-    border-top: #0065FC solid 2px;
-}
-
-.navLiens li a:active{
+.navLiens li a:hover{
+    padding-top: 70px;
     color: #0065FC;
+    border-top: #0065FC solid 2px;
 }
 
 /* PARTIE RECHERCHE */
@@ -71,12 +78,16 @@ h2, h3, p{
 .rechercheBox{
     display: flex;
     margin-top: 25px;
+    height: 50px;
+}
+.rechercheTitre{
+    margin-bottom: 5px;
 }
 
 #iconRecherche{
     background-color: #F2F2F2;
     width: 50px;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,23 +97,31 @@ h2, h3, p{
 }
 
 form > input{
-    height: 40px;
+    height: 50px;
     margin-left: 0;
     border: 0.5px solid #f2f2f2;
     padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+form > input::placeholder{
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .buttonRecherche{
-    line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;
-    text-align: center;
     color: #fff;
   	border: 0;
     border-top-right-radius: 15px 15px;
   	border-bottom-right-radius: 15px 15px;
     background-color: #0065FC;
     cursor: pointer;
+}
+
+.buttonRechercheMob{
+    display: none;
 }
 
 /* FONTAWESOME */
@@ -127,6 +146,7 @@ form > input{
 
 .sectionFiltres{
     display: flex;
+    margin-top: 20px;
 }
 
 .sectionFiltres > div{
@@ -146,7 +166,7 @@ form > input{
 }
 
 .filtres p{
-    padding: 5px;
+    padding: 10px;
 }
 
 .iconFiltres{
@@ -220,7 +240,8 @@ h2.textOutHebergement{
 }
 
 p.textOutHebergement{
-    padding: 10px 0 0 4%;
+    padding: 20px 0 0 4%;
+    font-weight: 800;
 }
 
 .maincontentHebergement{
@@ -229,16 +250,22 @@ p.textOutHebergement{
     justify-content: space-evenly;
 }
 
-.contentHebergement{
-    margin: 10px 10px;
-    width: 28%;
-    padding: 5px;
-    box-shadow: 5px 5px 5px #d1d1d1;
+.contentHebergement {
+	margin: 10px 10px;
+	width: 28%;
+	/* padding: 5px; */
+	box-shadow: 5px 5px 5px #d1d1d1;
+	display: flex;
+	flex-direction: column;
 }
 
 .contentHebergement:hover{
     transform: scale(1.05);
     transition: 0.3s;
+}
+
+.cadreHebergement{
+    padding: 5px;
 }
 
 .contentHebergement > figure{
@@ -249,10 +276,12 @@ p.textOutHebergement{
     padding: 5px;
 }
 
-.imageHebergement{
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.imageHebergement {
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+    height: 100px;
+	object-fit: cover;
 }
 
 .captionHebergement{
@@ -291,7 +320,7 @@ p.textOutHebergement{
 }
 
 .contentPopulaire{
-    margin: 10px 20px 8%;
+    margin: 10px;
     display: flex;
     box-shadow: 5px 5px 5px #d1d1d1;
 }
@@ -302,21 +331,24 @@ p.textOutHebergement{
 }
 
 .contentPopulaire figure{
-    color: black;
     margin: 0;
     display: flex;
-    padding: 5px;
+}
+
+.cadrePopulaire{
+    padding: 5px 0 0 5px;
 }
 
 .imagePopulaire{
-    width: 50%;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 .captionPopulaire{
-    padding-left: 10px;
-    line-height: 1.5;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -332,7 +364,7 @@ p.textOutHebergement{
 }
 
 .analytics{
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 /* LES ETOILES  */
@@ -438,9 +470,9 @@ transition: 0.3s;
 .textActivites{
     padding: 5%;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
     color: black;
     margin: 0;
+    font-weight: 800;
 }
 
 .contentSmall1,
@@ -464,6 +496,7 @@ footer{
     background-color: #F2F2F2;
     margin-top: 50px;
     padding: 20px 300px 20px 20px;
+    font-family: Raleway, sans-serif;
 }
 
 .apropos{
@@ -546,7 +579,6 @@ footer > div > ul{
         width: 100%;
     }
 
-    .fa-2x,
     .fa-lg{
         font-size: 1em !important;
     }
@@ -605,18 +637,25 @@ footer > div > ul{
     #headerTab{
         display: none;
     }
-
+    #headerMob{
+        display: contents;
+    }
     .headerMobile{
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-family: 'Raleway', sans-serif;
+        margin: 20px 10px;
     }
     #logo{
         width: 100px;
+        padding-top: 0;
     }
-    #inscription{
+    .headerMobile a{
         color: #0065FC;
+    }
+    .navMobile{
+        margin: 30px 0;
     }
     .navMobile > ul{
         display: flex;
@@ -628,7 +667,7 @@ footer > div > ul{
     .navMobile > ul > li{
         flex-grow: 1;
         padding-bottom: 10px;
-        border-bottom: grey solid 2px;
+        border-bottom: 2px solid #f2f2f2;
         font-family: 'Raleway', sans-serif;
     }
     .navMobile > ul > li:hover{
@@ -643,16 +682,37 @@ footer > div > ul{
     .rechercheTitle{
         font-size: 20px;
     }
-    .recherche  p{
+    .buttonRecherche{
+        display: none;
+    }
+    form > input{
+        width: 250px;
+    }
+    .buttonRechercheMob{
+        display: block;
+        padding: 0 20px;
+        font-size: 1rem;
+        color: #fff;
+        border: 0;
+        border-radius: 15px;
+        background-color: #0065FC;
+        cursor: pointer;
+        margin-left: -10px;
+    }
+    .recherche p{
         font-size: 14px;
     }
     .sectionFiltres{
         display: flex;
         flex-direction: column;
     }
+    .recherche,
+    .sectionFiltres,
+    .info{
+        margin: 10px;
+    }
     .sectionFiltres > h3{
         line-height: 1;
-        margin-bottom: 0;
         font-size: 14px;
     }
     .sectionFiltres > div{
@@ -682,25 +742,33 @@ footer > div > ul{
         background-color: white;
     }
     #populaire{
-        margin-top: 0;
         padding-bottom: 20px;
     }
     #populaire.backgroundGris{
         border-radius: 0;
+        padding: 20px 0 30px 0;
     }
+    .populaireTitle{
+        padding: 0;
+    }
+
     .populaireTitle > h2,
-    #hebergement > h2
+    #hebergement > h2{
+        padding-left: 10px;
+    }
+
     #activites > h2{
         font-size: 20px;
+        padding-left: 10px;
+        margin: 35px 0;
+        font-family: 'Raleway',sans-serif;
     }
     .contentPopulaire{
         margin: 5px;
     }
-    .maincontentHebergement{
-        /* flex-direction: column; */
-    }
     .contentHebergement{
         width: 100%;
+        box-shadow: 0 5px 5px #d1d1d1;
     }
     h2.textOutHebergement{
         padding: 0;
@@ -708,27 +776,38 @@ footer > div > ul{
     #activites{
         padding-top: 0;
     }
-    div.maincontentActivites{
-        display: block !important;
+    .imageActivite,
+    .imageActivite2,
+    .imageActivite3{
+        height: 150px;
+    }
+    .mainContentActivites{
+        display: block;
+        padding: 0 10px;
     }
     .premierBlocActivite, .deuxiemeBlocActivite, .troisiemeBlocActivite{
         margin-right: 0;
     }
-    .premierBlocActivite.contentSmall1, .contentSmall2, .contentSmall3, .contentSmall4{
-        margin-bottom: 35px;
+    .premierBlocActivite, .troisiemeBlocActivite, .contentSmall1, .contentSmall2, .contentSmall3, .contentSmall4{
+        margin-bottom: 25px;
     }
     footer{
         display: block;
-        padding: 20px 0 50px 0;
+        padding: 20px 0 50px 10px;
+        margin-top: 25px;
     }
     .apropos,
     .noshebergements{
         margin-right: 0;
+        padding-bottom: 20px;
     }
     .apropos h3,
     .noshebergements h3,
     .assistance h3{
         margin-bottom: 0;
+    }
+    p.textOutHebergement{
+        padding: 10px 0 0 4%;
     }
     footer h3,
     footer > div > ul{
@@ -736,12 +815,8 @@ footer > div > ul{
         margin: 0;
     }
     
-}
-
-/* ADAPTATION VERSION PC  */
-
-@media only screen and (min-width: 1023px){
-    #headerMob{
-        display: none;
+    .fa-lg{
+        font-size: 1.5em !important;
     }
+    
 }
