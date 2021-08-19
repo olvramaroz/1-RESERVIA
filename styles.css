@@ -265,7 +265,10 @@ p.textOutHebergement{
 }
 
 .cadreHebergement{
-    padding: 5px;
+    margin: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
 }
 
 .contentHebergement > figure{
@@ -278,8 +281,6 @@ p.textOutHebergement{
 
 .imageHebergement {
 	width: 100%;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
     height: 100px;
 	object-fit: cover;
 }
@@ -335,16 +336,18 @@ p.textOutHebergement{
     display: flex;
 }
 
-.cadrePopulaire{
-    padding: 5px 0 0 5px;
+.cadrePopulaire {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 5px 10px 5px 5px;
+	overflow: hidden;
+    width: 50%;
 }
 
 .imagePopulaire{
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .captionPopulaire{
@@ -352,6 +355,7 @@ p.textOutHebergement{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
 }
 
 .captionPopulaire > p{
@@ -523,6 +527,9 @@ footer > div > ul{
 /* -----------------VERSION ADAPTEE TABLETTE ---------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        margin: 8px 20px;
+    }
     #headerMob{
         display: none;
     }
@@ -599,17 +606,31 @@ footer > div > ul{
         flex-direction: column;
         padding: 0;
     }
+
+    .cadrePopulaire{
+        margin: 5px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 120px;
+        width: auto;
+    }
+
+    .captionPopulaire{
+        width: 100%;
+        display: block;
+        line-height: 1.5;
+    }
     
     .imagePopulaire {
-        width: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
     }
-    
-    .captionPopulaire {
-        display: block
+
+    .premierBlocActivite, .troisiemeBlocActivite, .contentSmall2, .contentSmall4, .contentSmall1, .contentSmall3{
+        padding-bottom: 10px;
     }
+
     #activites h2{
         padding-left: 3%;
     }
@@ -617,12 +638,16 @@ footer > div > ul{
         font-size: 13px;
         display: flex;
         justify-content: center;
-        padding: 0;
+        padding-top: 5px;
+        text-align: center;
     }
     
     footer {
         padding: 0;
         justify-content: start;
+    }
+    footer li{
+        font-size: 13px;
     }
     
     .apropos,
