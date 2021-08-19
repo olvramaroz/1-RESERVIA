@@ -745,9 +745,9 @@ footer > div > ul{
         flex-wrap: wrap;
     }
     .filtres{
-        padding: 0 10px 0 0;
+        padding: 0 5px 0 15px;
         width: fit-content;
-        margin: 5px 15px;
+        margin: 5px 15px 5px 0;
     }
     .filtres p,
     .info p{
