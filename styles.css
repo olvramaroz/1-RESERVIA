@@ -600,6 +600,7 @@ footer > div > ul{
     
     .contentPopulaire{
         margin: 10px 10px;
+        flex-grow: 1;
     }
     
     .contentPopulaire figure{
@@ -611,7 +612,6 @@ footer > div > ul{
         margin: 5px;
         border-bottom-right-radius: 10px;
         border-top-right-radius: 10px;
-        height: 120px;
         width: auto;
     }
 
