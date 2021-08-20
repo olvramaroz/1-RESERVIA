@@ -209,11 +209,10 @@ h3{
     align-items: center;
     justify-content: center;
     color: #0065fc;
-    padding: 1px 4px;
+    padding: 5px;
     border-radius: 50%;
     border: 0.1px solid #ccc;
-    width: 10px;
-    height: 15px;
+    width: 1em;
     margin-right: 10px;
 }
 
@@ -496,19 +495,18 @@ transition: 0.3s;
 
 footer{
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
     margin-top: 50px;
-    padding: 20px 300px 20px 20px;
+    padding: 20px;
     font-family: Raleway, sans-serif;
 }
 
-.apropos{
-    margin-right: 125px;
+.apropos, .noshebergements{
+    flex-grow: 1;
 }
 
-.noshebergements{
-    margin-right: 180px;
+.assistance{
+    flex-grow: 2;
 }
 
 footer h3{
@@ -520,7 +518,7 @@ footer li{
 }
 
 footer > div > ul{
-    line-height: 1.5;
+    line-height: 2;
 }
 
 
@@ -528,7 +526,9 @@ footer > div > ul{
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     body{
-        margin: 8px 20px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     #headerMob{
         display: none;
@@ -539,18 +539,15 @@ footer > div > ul{
     h2, h3{
         font-size: 15px;
     }
-    p{
-        font-size: 14px;
-    }
-    .captionHebergement p{
-        font-size: 14px;
-    }
+
+    p,
+    .captionHebergement p,
     .captionPopulaire > p{
         font-size: 14px;
     }
 
     .filtres{
-        padding: 0 6px;
+        padding: 0 15px;
         margin: 15px 10px;
         height: 30px;
     }
@@ -573,7 +570,7 @@ footer > div > ul{
     }
     
     .marginSides{
-        margin: 0;
+        margin: 0 1.5em;
     }
     
     .mainHebergementPopulaire{
@@ -618,7 +615,6 @@ footer > div > ul{
     .captionPopulaire{
         width: 100%;
         display: block;
-        line-height: 1.5;
     }
     
     .imagePopulaire {
@@ -659,6 +655,10 @@ footer > div > ul{
 
 /* ------------------- VERSION ADAPTEE MOBILE PORTRAIT -----------------*/
 @media only screen and (max-width: 767px){
+    body{
+        margin: 0;
+    }
+    
     #headerTab{
         display: none;
     }
@@ -724,9 +724,7 @@ footer > div > ul{
         cursor: pointer;
         margin-left: -10px;
     }
-    .recherche p{
-        font-size: 14px;
-    }
+
     .sectionFiltres{
         display: flex;
         flex-direction: column;
@@ -738,7 +736,6 @@ footer > div > ul{
     }
     .sectionFiltres > h3{
         line-height: 1;
-        font-size: 14px;
     }
     .sectionFiltres > div{
         display: flex;
@@ -749,9 +746,12 @@ footer > div > ul{
         width: fit-content;
         margin: 5px 15px 5px 0;
     }
-    .filtres p,
+    
+    .info{
+        margin: 0 10px;
+    }
     .info p{
-        font-size: 14px;
+        padding-top: 1em;
     }
     .mainHebergementPopulaire{
         display: flex;
@@ -768,28 +768,18 @@ footer > div > ul{
     }
     #populaire{
         padding-bottom: 20px;
+        margin-top: 0;
     }
     #populaire.backgroundGris{
         border-radius: 0;
         padding: 20px 0 30px 0;
     }
-    .populaireTitle{
-        padding: 0;
-    }
-
-    .populaireTitle > h2,
-    #hebergement > h2{
-        padding-left: 10px;
-    }
 
     #activites > h2{
         font-size: 20px;
-        padding-left: 10px;
         margin: 35px 0;
         font-family: 'Raleway',sans-serif;
-    }
-    .contentPopulaire{
-        margin: 5px;
+        padding: 0 1.5em;
     }
     .contentHebergement{
         width: 100%;
@@ -808,7 +798,7 @@ footer > div > ul{
     }
     .mainContentActivites{
         display: block;
-        padding: 0 10px;
+        padding: 0 1.5em;
     }
     .premierBlocActivite, .deuxiemeBlocActivite, .troisiemeBlocActivite{
         margin-right: 0;
@@ -818,7 +808,6 @@ footer > div > ul{
     }
     footer{
         display: block;
-        padding: 20px 0 50px 10px;
         margin-top: 25px;
     }
     .apropos,
@@ -832,7 +821,7 @@ footer > div > ul{
         margin-bottom: 0;
     }
     p.textOutHebergement{
-        padding: 10px 0 0 4%;
+        margin: 10px 0 0 0.8em;
     }
     footer h3,
     footer > div > ul{
@@ -842,6 +831,22 @@ footer > div > ul{
     
     .fa-lg{
         font-size: 1.5em !important;
+    }
+
+    .headerMobile,
+    .recherche,
+    .info,
+    .sectionFiltres,
+    .maincontentPopulaire,
+    .maincontentHebergement{
+        padding: 0 0.8em;
+    }
+    
+    #hebergement > h2{
+        padding: 0 1em;
+    }
+    .analytics{
+        padding: 1em;
     }
     
 }
