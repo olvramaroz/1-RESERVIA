@@ -1,5 +1,5 @@
-# OnyLalainaValerieRamarozatovo_P2_06072021
-view the page here : https://olvramaroz.github.io/OnyLalainaValerieRamarozatovo_P2_06072021/
+# Responsive Static frontend integration
+# HTML, CSS
 
 <h2> Reservia HTML CSS project </h2>
 This project is about web design implementation, with only basic HTML and CSS.
